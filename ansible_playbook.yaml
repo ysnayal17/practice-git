@@ -1,0 +1,15 @@
+---
+-
+        name: Yogesh Singh Nayal- 192081
+        hosts: 172.17.0.2
+        tasks: 
+                - name: Install nginx
+                  apt: name=nginx state=latest
+                  tags: nginx
+
+                - name: Install PostgreSQL
+                  apt: name=postgresql state=latest
+                  tags: PostgreSQL
+
+                - name: Nano remove
+                  apt: name=nano state=absent
